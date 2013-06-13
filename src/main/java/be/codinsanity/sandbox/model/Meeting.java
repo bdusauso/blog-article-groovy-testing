@@ -18,11 +18,11 @@ public class Meeting {
     @Column(name = "ID")
     private Long id;
 
-    @Type(type = "org.joda.time.contrib.hibernate.PersistentDateTime")
+    @Type(type = "org.jadira.usertype.dateandtime.joda.PersistentDateTime")
     @Column(name = "START_DATE_TIME")
     private DateTime start;
 
-    @Type(type = "org.joda.time.contrib.hibernate.PersistentDateTime")
+    @Type(type = "org.jadira.usertype.dateandtime.joda.PersistentDateTime")
     @Column(name = "END_DATE_TIME")
     private DateTime end;
 
