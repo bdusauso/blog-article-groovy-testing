@@ -25,9 +25,12 @@ class MeetingRepositoryTest extends Specification {
     @Resource
     DataSource dataSource
 
-    def "Findall should return "() {
+    def "FindOne should return an existing entity"() {
         expect:
-        assert meetingRepository.findAll() != null
+        meetingRepository.findOne(id) != null
+
+        where:
+        id << [1L, 2L, 3L]
     }
 
     @Before
