@@ -25,9 +25,9 @@ class PersonGroovyTest {
         )
 
         def p2 = new Person(
-                firstname: 'Bruno',
-                lastname: 'Dusausoy',
-                email: 'bdusauso@foo.com',
+                firstname: 'John',
+                lastname: 'Doe',
+                email: 'john@doe.com',
                 birthDate: new DateMidnight(1975, 1, 2),
                 addresses: [
                         new Person.Address(
@@ -38,6 +38,6 @@ class PersonGroovyTest {
                 ] as Set
         )
 
-        assert p1 == p2
+        assert p1 != p2
     }
 }
