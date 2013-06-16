@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>be.codinsanity.sandbox</groupId>
-    <artifactId>spock-spring-dbunit</artifactId>
+    <artifactId>blog-java-test-groovy</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>Spock, Spring, DBUnit</name>
+    <name>Testing Java code with Groovy</name>
     <url>http://blog.codinsanity.be</url>
 
     <properties>
