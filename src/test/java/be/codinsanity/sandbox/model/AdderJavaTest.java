@@ -15,19 +15,19 @@ import static org.junit.Assert.assertEquals;
 @RunWith(Parameterized.class)
 public class AdderJavaTest {
 
-    private int firstInteger;
-    private int secondInteger;
-    private int result;
+    private int operand1;
+    private int operand2;
+    private int sum;
 
-    public AdderJavaTest(int firstInteger, int secondInteger, int result) {
-        this.firstInteger = firstInteger;
-        this.secondInteger = secondInteger;
-        this.result = result;
+    public AdderJavaTest(int operand1, int operand2, int sum) {
+        this.operand1 = operand1;
+        this.operand2 = operand2;
+        this.sum = sum;
     }
 
     @Test
     public void testAdd() {
-        assertEquals(Adder.add(firstInteger, secondInteger), result);
+        assertEquals(Adder.add(operand1, operand2), sum);
     }
 
     @Parameterized.Parameters(name = "Adding {0} and {1} should return {2}")
