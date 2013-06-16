@@ -34,7 +34,7 @@ class MeetingRepositoryTest extends Specification {
             meetingRepository.findOne(id) != null
 
         where:
-            id << [1L, 2L, 3L, 4L]
+            id << [1L, 2L, 3L]
     }
 
     def init() {
